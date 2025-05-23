@@ -1,0 +1,33 @@
+{% extends "index.html" %}
+
+{% block content %}
+<section class="contact-container">
+  <h2>Contact Me</h2>
+
+  <!-- Contact Icons in a Row -->
+  <div class="contact-icons-row">
+    <a href="mailto:dhanunjaytippana123@gmail.com" target="_blank">
+      <img src="{{ url_for('static', filename='email.png') }}" alt="Email Icon" class="contact-icon" />
+
+    </a>
+    <a href="https://github.com/Dhanu2307-py" target="_blank">
+      <img src="{{ url_for('static', filename='github.png') }}" alt="GitHub Icon" class="contact-icon" />
+    </a>
+    <a href="https://linkedin.com/in/dhanunjay-tippana-8342662b1" target="_blank">
+      <img src="{{ url_for('static', filename='linkedin.jpg') }}" alt="LinkedIn Icon" class="contact-icon" />
+    </a>
+  </div>
+
+  <!-- Contact Form -->
+  <form class="contact-form" method="POST" action="{{ url_for('contact') }}">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  {% if success %}
+    <p class="success-message">Thanks for reaching out! I’ll get back to you soon.</p>
+  {% endif %}
+</section>
+{% endblock %}

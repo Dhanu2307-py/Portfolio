@@ -1,0 +1,44 @@
+{% extends "index.html" %}
+
+{% block content %}
+<body>
+
+  <!-- Main Projects Section -->
+  <main class="main-container">
+    <h1 class="floating-text">My Projects</h1>
+
+    <section class="projects-section">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h2>AI-Based Epidemic Detection from X-Rays</h2>
+        <p>
+          Developed a deep learning model using <strong>VGG16</strong> to classify chest X-rays into four categories:
+          COVID-19, Pneumonia, Pulmonary Tuberculosis, and Normal. Trained on 12,000 images, achieving
+          <strong>85% accuracy</strong> with high sensitivity and specificity.
+        </p>
+        <p>
+          Built using <strong>Python</strong>, <strong>Keras</strong>, and <strong>TensorFlow</strong>, the system aims to offer
+          cost-effective, rapid medical diagnostics.
+        </p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h2>Edge-Assisted Crime Prediction Framework</h2>
+        <p>
+          Designed a machine learning framework using <strong>Decision Trees</strong> to predict criminal activity,
+          achieving <strong>81% accuracy</strong>. Used historical and demographic data with edge computing
+          to analyze risks across regions.
+        </p>
+        <p>
+          Enhanced public safety insights through interactive crime pattern visualizations.
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>
+{% endblock %}

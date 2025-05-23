@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <a href="{{ url_for('index') }}" class="home-link" aria-label="Home">
+      <img src="{{ url_for('static', filename='home.png') }}" alt="Home Icon" class="home-icon" />
+      Home
+    </a>
+  </nav>
+
+  {% block content %}
+  <!-- Main Content -->
+  <div class="main-container">
+    <div class="floating-text">Hi, I'm Dhanunjay Tippana</div>
+
+    <div class="image-container">
+      <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Portfolio Image" />
+    </div>
+
+    <div class="intro-section">
+      <h2>Python Enthusiast</h2> 
+      <p> I'm a Computer Science and Engineering graduate with hands-on experience in developing 
+        intelligent systems using Python and deep learning. My work includes building an AI-powered 
+        epidemic detection model from chest X-rays and designing a crime prediction framework using 
+        machine learning and edge computing. </p>
+  </div>
+
+  <!-- Bottom Icon Row -->
+  <div class="bottom-row">
+    <div class="home-container">
+      <a href="{{ url_for('about') }}">
+        <img src="{{ url_for('static', filename='about.png') }}" alt="About" />
+        <p class="icon-label">About</p>
+      </a>
+    </div>
+    <div class="home-container">
+      <a href="{{ url_for('projects') }}">
+        <img src="{{ url_for('static', filename='projects.png') }}" alt="Projects" />
+        <p class="icon-label">Projects</p>
+      </a>
+    </div>
+    <div class="home-container">
+      <a href="{{ url_for('resume') }}">
+        <img src="{{ url_for('static', filename='resume.png') }}" alt="Resume" />
+        <p class="icon-label">Resume</p>
+      </a>
+    </div>
+    <div class="home-container">
+      <a href="{{ url_for('contact') }}">
+        <img src="{{ url_for('static', filename='contact.png') }}" alt="Contact" />
+        <p class="icon-label">Contact</p>
+      </a>
+    </div>
+  </div>
+  {% endblock %}
+
+</body>
+</html>

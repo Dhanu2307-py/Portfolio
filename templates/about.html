@@ -1,0 +1,31 @@
+{% extends "index.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static',filename = 'style.css') }}">
+
+<div class="about-container">
+  <div class="about-box">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm <strong>Dhanunjay Tippana</strong>, a Computer Science and Engineering student at Narasimha Reddy Engineering College, Hyderabad, with a specialization in Data Science.
+      I am an enthusiastic and attentive learner, passionate about solving real-world problems through intelligent systems.
+    </p>
+    <p>
+      I have experience working with <strong>Python, HTML, CSS, MySQL, and basic JavaScript</strong>. My focus lies in <strong>AI, machine learning, and web development</strong>, 
+      and I’m skilled with tools like <strong>Jupyter, VS Code, and PyCharm</strong>.
+    </p>
+    <p>
+      Some of my key projects include an <strong>AI-based epidemic detection system</strong> using VGG16 to classify chest X-rays, and an 
+      <strong>Edge-Assisted Crime Prediction Framework</strong> that predicts crime types using decision tree algorithms with 81% accuracy.
+    </p>
+    <p>
+      I’ve completed certifications in Python, Data Analytics, HTML5, CSS3, and JavaScript, and recently interned at <strong>Datapoint Info Solutions</strong>, where I implemented 
+      a real-time crime prediction model using edge computing techniques.
+    </p>
+    <p>
+      I am constantly exploring new technologies and frameworks, and I'm eager to contribute to innovative projects in AI and software development that reflect my skills and creativity.
+    </p>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,92 @@
+{% extends 'index.html' %}
+{% block content %}
+  <!-- Main Resume Section -->
+  <main class="main-container">
+    <h1 class="floating-text">My Resume</h1>
+
+    <section class="resume-section">
+
+      <!-- Career Objective -->
+      <div class="resume-card">
+        <h2>Career Objective</h2>
+        <p>
+          Enthusiastic and attentive fresher with a strong foundation in Python programming and a keen interest in software development, data science, and artificial intelligence. Eager to apply my problem-solving skills and technical knowledge to develop innovative solutions and contribute to dynamic teams.
+        </p>
+      </div>
+
+      <!-- Technical Skills -->
+      <div class="resume-card tech-skills-card">
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-icon">
+      <img src="{{ url_for('static',filename = 'Python.png') }}" alt="Python">
+      <span>Python</span>
+    </div>
+    <div class="skill-icon">
+      <img src="{{ url_for('static',filename = 'C.png') }}" alt="C">
+      <span>C</span>
+    </div>
+    <div class="skill-icon">
+      <img src="{{ url_for('static',filename = 'Html.png') }}" alt="HTML">
+      <span>HTML</span>
+    </div>
+     <div class="skill-icon">
+      <img src="{{ url_for('static',filename = 'css.png') }}" alt="Css">
+      <span>CSS</span>
+    </div>
+     <div class="skill-icon">
+      <img src="{{ url_for('static',filename = 'js.png') }}" alt="JavaScript">
+      <span>JavaScript</span>
+    </div>
+    <div class="skill-icon">
+      <img src="{{ url_for('static',filename = 'Mysql.png') }}" alt="SQL">
+      <span>MySQL</span>
+    </div>
+     <div class="skill-icon">
+      <img src="{{ url_for('static',filename = 'flask.png') }}" alt="Flask">
+      <span>Flask</span>
+    </div>
+    
+    <!-- Add more skills as needed -->
+  </div>
+</div>
+
+      <!-- Education -->
+      <div class="resume-card">
+        <h2>Academic Qualifications</h2>
+        <ul>
+          <li><strong>B.Tech – CSE</strong>, NRCM Hyderabad (2021–2025) — GPA: 7.75/10</li>
+          <li><strong>Intermediate – MPC</strong>, SVRM College, Guntur (2019–2021) — Marks: 809/1000</li>
+          <li><strong>SSC</strong> –  Panchasheela High School, Hyderabad (2018–2019) — GPA: 8.8/10</li>
+        </ul>
+      </div>
+
+      
+
+      <!-- Certifications -->
+      <div class="resume-card">
+        <h2>Certifications</h2>
+        <ul>
+          <li><strong>Cisco Networking Academy</strong> – Python Programming Essentials</li>
+          <li><strong>Cisco Networking Academy</strong> – Data Analytics Essentials</li>
+          <li><strong>Udemy</strong> – HTML5 & CSS3 Complete Course</li>
+          <li><strong>Udemy</strong> – Basic JavaScript</li>
+          <li><strong>TCS iON</strong> – Career Edge: Young Professional</li>
+        </ul>
+      </div>
+
+      <!-- Internship -->
+      <div class="resume-card">
+        <h2>Internship</h2>
+        <p>
+          <strong>Datapoint Info Solutions (Oct 2024):</strong><br>
+          Designed and implemented an Edge-Assisted Crime Prediction Framework using Python and ML. Gained experience in data analysis, edge computing, and algorithm optimization.
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>
+{% endblock %}
