@@ -27,6 +27,10 @@ body {
   filter: contrast(1.05) brightness(0.95);
   position: relative;
 }
+a {
+  text-decoration: none;
+}
+
 
 /* Glass Effect Overlay */
 body::after {
