@@ -7,7 +7,7 @@ from sqlalchemy.dialects.mysql import LONGBLOB
 app = Flask(__name__)
 
 # Secret key for sessions, flash messages
-app.secret_key = os.getenv('SECRET_KEY', 'your_secret_key')
+app.secret_key = os.getenv('SECRET_KEY', 'key123')
 
 # Use environment variable DATABASE_URL for DB connection (set this in Render or locally)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv(
